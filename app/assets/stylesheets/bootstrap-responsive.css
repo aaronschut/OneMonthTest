@@ -1,12 +1,22 @@
 /* Large desktop */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+
+.navbar-collapse {height: 3em !important;}
+
+ }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) { 
+
+.navbar-collapse {height: 3em !important;}
+
+ }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
+
 	 .jumbotron {padding: 1.5em;}
+
  }
  
 /* Landscape phones and down */
