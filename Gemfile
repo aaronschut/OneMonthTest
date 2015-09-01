@@ -56,3 +56,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass'
 
 gem 'sprockets', '~> 2.0'
+
