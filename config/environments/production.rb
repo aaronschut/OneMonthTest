@@ -75,4 +75,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Required for Heroku. Instructed by Devise.
+  # Note to set to your actual host name.
+  config.action_mailer.default_url_options = { host: 'https://schut-pinteresting.herokuapp.com/' }
 end

@@ -11,6 +11,8 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+# Devise Gem for adding users
+gem 'devise', '~> 3.5', '>= 3.5.2'
 
 
 # Use jquery as the JavaScript library
