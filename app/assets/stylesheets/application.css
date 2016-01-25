@@ -14,17 +14,27 @@
  *= require_self
  */
  
- body {background-color: #34495e;}
- body .container {color: #ffcc56;}
+ body {background-color: #363636;}
+ body .container {color: #343434;}
  
 .jumbotron {background-color: #f8f8f8;}
-.jumbotron {color: #34495e;}
-.btn-primary {background-color: #f39c12; border-color: #f39c12;}
+.jumbotron {color: #73B88A;}
+.btn-primary {background-color: #73B88A; border-color: #73B88A;}
 .btn-primary:hover {
-  color: #fff;
-  background-color: #e67e22;
-  border-color: #204d74;
+  color: #ffffff;
+  background-color: #639E77;
+  border-color: #639E77;
 }
+.panel-primary .panel-heading {background-color: #73B88A; border-color: #73B88A;}
+.panel-primary {border-color:#73B88A;}
+.panel-body {color: #34495e;}
 
 /*Trying to get the brand and nav links even on a horz plane.*/
 .navbar-collapse, .navbar-brand {padding-top: 1em; padding-bottom: 1em;}
+.navbar-header a.navbar-brand {color:#73B88A !important;} 
+.navbar-header a.navbar-brand:hover {color:#639E77 !important;} 
+
+
+.alert-custom {background-color: #73B88A; color: #ffffff;}
+
+
