@@ -14,9 +14,10 @@
  *= require_self
  */
  
- body {background-color: #363636;}
+ body {background-color: #f3f3f3;}
  body .container {color: #343434;}
- 
+a {color: #73B88A;}
+
 .jumbotron {background-color: #f8f8f8;}
 .jumbotron {color: #73B88A;}
 .btn-primary {background-color: #73B88A; border-color: #73B88A;}
@@ -25,8 +26,9 @@
   background-color: #639E77;
   border-color: #639E77;
 }
-.panel-primary .panel-heading {background-color: #73B88A; border-color: #73B88A;}
-.panel-primary {border-color:#73B88A;}
+
+.panel-primary .panel-heading {background-color: #73B88A; border-color: #f3f3f3;}
+.panel-primary {border-color:#f3f3f3;}
 .panel-body {color: #34495e;}
 
 /*Trying to get the brand and nav links even on a horz plane.*/
