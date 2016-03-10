@@ -15,6 +15,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 # PaperClip Gem for adding images to pins.
 gem 'paperclip', '~> 4.2'
+# Amazon AWS Gem in hopes of getting PaperClip Functionality on Heroku
+gem 'aws-sdk', '< 2.0'
 
 
 # Use jquery as the JavaScript library
