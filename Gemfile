@@ -13,6 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # Devise Gem for adding users
 gem 'devise', '~> 3.5', '>= 3.5.2'
+# PaperClip Gem for adding images to pins.
+gem 'paperclip', '~> 4.2'
 
 
 # Use jquery as the JavaScript library

@@ -22,6 +22,9 @@ class PinsController < ApplicationController
   def edit
   end
 
+
+  # getting this error on line 29
+  # Paperclip::Errors::MissingRequiredValidatorError in PinsController#create
   def create
     @pin = current_user.pins.build(pin_params)
     if @pin.save
