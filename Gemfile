@@ -21,11 +21,20 @@ gem 'aws-sdk', '< 2.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# Loads the page behind the sences instead of realoading the entire application. It injects the view onto that page.
+# It does not load things like Masonry and can cause some JavaScript errors so for that reason it is being commented out.
+# http://sublimecoding.com/blog/2015/07/30/remove-turbolinks-from-rails-4/
+# gem 'turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# Loads the page behind the sences instead of realoading the entire application. It injects the view onto that page.
+# It does not load things like Masonry.
 gem 'jbuilder', '~> 2.0'
 
+# Masonry Gem for Responsive Grid
+gem 'masonry-rails', '~> 0.2.0'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do

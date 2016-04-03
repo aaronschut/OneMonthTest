@@ -1,0 +1,15 @@
+<div class="jumbotron center">
+	<% if user_signed_in? %>
+		<h1>Never Stop Exploring</h1>
+    	# do something
+     <% else %>
+      	<h1>A Simple Calculator</h1>
+      	<p>
+            <div class="field form-group">
+              <%= f.label :Income %> <i>(Enter Your Income)</i><br />
+              <%= f.income_field :Income, autocomplete: "off", class: "form-control" %>
+            </div>
+        	<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+      	</p>
+  <% end %>  
+</div>

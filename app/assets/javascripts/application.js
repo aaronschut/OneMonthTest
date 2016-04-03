@@ -12,7 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require_tree .
 //= require bootstrap
 //= require bootstrap-sprockets
+//
+// For Masonry Gem
+//= require masonry/jquery.masonry
+//= require masonry/jquery.imagesloaded.min

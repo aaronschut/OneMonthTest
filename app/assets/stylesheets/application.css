@@ -40,3 +40,4 @@ a {color: #73B88A;}
 .alert-custom {background-color: #73B88A; color: #ffffff;}
 
 
+ *= require 'masonry/transitions'
