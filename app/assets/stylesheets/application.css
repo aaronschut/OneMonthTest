@@ -14,12 +14,38 @@
  *= require_self
  */
  
+
+/* ==========================================================================
+   Images - Keeping it Responsive
+   ========================================================================== */
+   
+img, fieldset {
+	border: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+} 
+
+.centerImg img{
+	margin: 0 auto 0;
+	padding:1em 0 1em 0;
+	position: relative;
+	display: block; 
+}
+
+
+
  body {background-color: #f3f3f3;}
  body .container {color: #343434;}
 a {color: #73B88A;}
 
 .jumbotron {background-color: #f8f8f8;}
 .jumbotron {color: #73B88A;}
+
+
 .btn-primary {background-color: #73B88A; border-color: #73B88A;}
 .btn-primary:hover {
   color: #ffffff;
@@ -27,15 +53,17 @@ a {color: #73B88A;}
   border-color: #639E77;
 }
 
-.panel-primary .panel-heading {background-color: #73B88A; border-color: #f3f3f3;}
-.panel-primary {border-color:#f3f3f3;}
-.panel-body {color: #34495e;}
-
 /*Trying to get the brand and nav links even on a horz plane.*/
 .navbar-collapse, .navbar-brand {padding-top: 1em; padding-bottom: 1em;}
 .navbar-header a.navbar-brand {color:#73B88A !important;} 
 .navbar-header a.navbar-brand:hover {color:#639E77 !important;} 
+.navbar-nav li a.btn-primary {color: #ffffff;}
+.navbar-nav li a {padding: .5em; margin:.5em;}
 
+
+.panel-primary .panel-heading {background-color: #73B88A; border-color: #f3f3f3;}
+.panel-primary {border-color:#f3f3f3;}
+.panel-body {color: #34495e;}
 
 .alert-custom {background-color: #73B88A; color: #ffffff;}
 

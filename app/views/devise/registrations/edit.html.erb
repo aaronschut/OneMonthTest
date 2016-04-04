@@ -10,6 +10,7 @@
   <%= devise_error_messages! %>
 
   <div class="field form-group">
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, class: "form-control" %>
   </div>
@@ -19,16 +20,19 @@
   <% end %>
 
   <div class="field form-group">
+    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
   </div>
 
   <div class="field form-group">
+    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
   </div>
 
   <div class="field form-group">
+    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
   </div>

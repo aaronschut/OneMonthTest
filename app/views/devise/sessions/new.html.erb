@@ -10,12 +10,14 @@
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field form-group">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "hello@pinteresting.com" %>
       </div>
   
 
       <div class="field form-group">
+        <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
         <%= f.label :password %><br />
         <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
       </div>
