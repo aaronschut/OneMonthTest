@@ -20,3 +20,4 @@
 // For Masonry Gem
 //= require masonry/jquery.masonry
 //= require masonry/jquery.imagesloaded.min
+//= require masonry/modernizr-transitions
