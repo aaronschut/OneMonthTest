@@ -53,13 +53,19 @@ a {color: #73B88A;}
   border-color: #639E77;
 }
 
-/*Trying to get the brand and nav links even on a horz plane.*/
-.navbar-collapse, .navbar-brand {padding-top: 1em; padding-bottom: 1em;}
+/*Nav Bar Brand*/
+.navbar-collapse > .navbar-brand {padding-top: 1.5em;}
 .navbar-header a.navbar-brand {color:#73B88A !important;} 
 .navbar-header a.navbar-brand:hover {color:#639E77 !important;} 
-.navbar-nav li a.btn-primary {color: #ffffff;}
-.navbar-nav li a {padding: .5em; margin:.5em;}
 
+/*Nav Bar Links*/
+.navbar-nav li a.btn-primary {border-color: #73B88A; background-color: transparent; color: #73B88A;}
+.navbar-nav li a.btn-primary:hover {background-color:#73B88A; color: #ffffff;}
+
+/*Nav Bar Links*/
+.navbar-nav li a {padding: .5em; margin:.5em;}
+.navbar-nav>li>a.nav-link {color:#73B88A !important;}
+.navbar-nav>li>a.nav-link:hover {color:#639E77 !important;}
 
 .panel-primary .panel-heading {background-color: #73B88A; border-color: #f3f3f3;}
 .panel-primary {border-color:#f3f3f3;}

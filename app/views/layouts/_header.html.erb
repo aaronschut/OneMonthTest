@@ -22,17 +22,17 @@
         <% if user_signed_in? %>
           <li>
             <%= link_to new_pin_path, class: "btn btn-primary" do %>
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Pin
+              <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> New Pin
             <% end %>
           </li>
         <% end %>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Home", root_path, class: "nav-link" %></li>
+        <li><%= link_to "About", about_path, class: "nav-link" %></li>
         <% if user_signed_in? %>
-          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-          <li><%= link_to "Account Settings", edit_user_registration_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %></li>
+          <li><%= link_to "Account Settings", edit_user_registration_path, class: "nav-link" %></li>
         <% else %>
-          <li><%= link_to "Sign in", new_user_session_path %></li>
+          <li><%= link_to "Sign in", new_user_session_path, class: "nav-link" %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
