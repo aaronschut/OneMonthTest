@@ -7,7 +7,7 @@ class PinsController < ApplicationController
 
   # "created_at" was pulled from your database column. app/db/schema.rb
   def index
-    @pins = Pin.all.order("created_at DESC")
+    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 12)
     respond_with(@pins)
   end
 

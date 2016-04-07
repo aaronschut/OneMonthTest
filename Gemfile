@@ -36,6 +36,10 @@ gem 'jbuilder', '~> 2.0'
 # Masonry Gem for Responsive Grid
 gem 'masonry-rails', '~> 0.2.0'
 
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'

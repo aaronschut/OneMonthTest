@@ -33,13 +33,18 @@ img {
 	margin: 0 auto 0;
 	padding:1em 0 1em 0;
 	position: relative;
-	display: block; 
+}
+.centerText {
+  margin: 0 auto;
+  padding:3em 0 1em 0;
+  position: relative;
+  text-align: center;
 }
 
 
 
- body {background-color: #f3f3f3;}
- body .container {color: #343434;}
+body {background-color: #f3f3f3;}
+body .container {color: #343434;}
 a {color: #73B88A;}
 
 .jumbotron {background-color: #f8f8f8;}
@@ -72,6 +77,11 @@ a {color: #73B88A;}
 .panel-body {color: #34495e;}
 
 .alert-custom {background-color: #73B88A; color: #ffffff;}
+
+.pagination li > a{color:#73B88A;}
+.pagination > .active > span {background-color:#73B88A; border-color:#73B88A;}
+.pagination li > a:hover{color:#639E77;}
+.pagination > .active > span:hover {background-color:#639E77; border-color:#639E77;}
 
 
  /* *= require 'masonry/transitions' */
