@@ -5,8 +5,9 @@ class PinsController < ApplicationController
 
   respond_to :html
 
+  # "created_at" was pulled from your database column. app/db/schema.rb
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order("created_at DESC")
     respond_with(@pins)
   end
 
