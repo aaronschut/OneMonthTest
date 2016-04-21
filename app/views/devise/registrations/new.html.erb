@@ -6,15 +6,23 @@
     
 
 
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= devise_error_messages! %>
 
+        <div class="form-group">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          <%= f.label :name %>
+          <%= f.text_field :name, autofocus: true, class: "form-control" %>
+        </div>
+
         <div class="field form-group">
+          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
           <%= f.label :email %><br />
           <%= f.email_field :email, autofocus: true, class: "form-control"  %>
         </div>
 
-        <div class="field form-group"> 
+        <div class="field form-group">
+          <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 
           <%= f.label :password %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -24,6 +32,7 @@
         </div>
 
         <div class="field form-group">
+          <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
           <%= f.label :password_confirmation %><br />
           <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
         </div>

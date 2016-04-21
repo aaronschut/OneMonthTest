@@ -11,6 +11,12 @@
 
   <div class="field form-group">
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true, class: "form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, class: "form-control" %>
   </div>
