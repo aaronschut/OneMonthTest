@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pinteresting</title>
+  <title>Skut</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
-<body>
+<body> <!-- body -->
 
-<%= render 'layouts/header' %>
+<div id="container1">
+	<div id="container2">
+		<div id="container3">
+			<%= render 'layouts/header' %>
+		</div>
+	</div>
+</div>
+
+<!-- <%= render 'layouts/hero' %> -->
 
 <div class="container clearfix">
   <% flash.each do |name, msg| %>
@@ -18,5 +26,5 @@
 	<%= yield %>
 </div>
 
-</body>
+</body> <!-- /body -->
 </html>
